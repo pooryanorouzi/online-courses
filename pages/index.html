@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets//styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>آموزش تخصصی برنامه نویسی وب | فرانت مستر</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-200 overflow-x-hidden">
+    <header
+      class="flex items-center justify-between p-4 bg-white shadow-md fixed w-full md:px-16"
+    >
+      <nav class="flex items-center">
+        <button
+          class="text-[28px] text-violet-700 font-extralight mt-1.5 md:hidden"
+          tabindex="-1"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.html" tabindex="-1"
+          ><img
+            src="../assets/images/logo.svg"
+            alt="logo"
+            class="w-7 mr-5 md:mr-0"
+        /></a>
+        <ul
+          class="hidden md:flex items-center text-gray-700 mr-10 md:mr-12 lg:mr-16"
+        >
+          <li
+            class="transition-all duration-300 ease-in-out hover:text-white hover:bg-[#5620BC] hover:px-1.5 hover:py-1 hover:cursor-pointer hover:border hover:border-transparent hover:rounded-lg"
+          >
+            خانه
+          </li>
+          <li
+            class="mx-6 transition-all duration-300 ease-in-out hover:text-white hover:bg-[#5620BC] hover:px-1.5 hover:py-1 hover:cursor-pointer hover:border hover:border-transparent hover:rounded-lg"
+          >
+            دوره آموزشی
+          </li>
+          <li
+            class="ml-6 transition-all duration-300 ease-in-out hover:text-white hover:bg-[#5620BC] hover:px-1.5 hover:py-1 hover:cursor-pointer hover:border hover:border-transparent hover:rounded-lg"
+          >
+            بلاگ‌ها
+          </li>
+          <li
+            class="transition-all duration-300 ease-in-out hover:text-white hover:bg-[#5620BC] hover:px-2 hover:py-1 hover:cursor-pointer hover:border hover:border-transparent hover:rounded-lg"
+          >
+            درباره ما
+          </li>
+        </ul>
+      </nav>
+      <nav class="flex items-center">
+        <button
+          class="text-xl text-violet-700 font-extralight mt-1"
+          tabindex="-1"
+        >
+          <i class="fa-solid fa-moon"></i></button
+        ><button
+          class="text-xl text-violet-700 font-extralight ml-6 mr-7 mt-1"
+          tabindex="-1"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+          <!-- <i class="fa-solid fa-sun"></i> --></button
+        ><a
+          href="login.html"
+          class="text-violet-700 font-extralight flex items-center"
+          tabindex="-1"
+        >
+          <i class="fa-solid fa-arrow-right-from-bracket text-xl ml-1.5"></i>
+          <p class="-mt-1">ورود</p>
+        </a>
+      </nav>
+    </header>
+    <main class="pt-[4rem]">
+      <!-- Banner -->
+      <section class="bg-white py-8 shadow-md">
+        <figure class="md:flex md:items-center md:justify-evenly md:ml-5">
+          <img
+            src="../assets/images/banner.png"
+            alt=""
+            class="md:w-[50%] border-none md:scale-105"
+          />
+          <article class="">
+            <figcaption
+              class="text-xl font-bold my-4 text-center md:texl-2xl md:font-bold lg:text-3xl"
+            >
+              دوره های آموزشی آکادمی مِستر فرانت
+            </figcaption>
+            <p
+              class="text-sm text-center md:text-text-base md:ml-3 lg:text-lg lg:my-5"
+            >
+              برنامه نویسی را سریع، آسان و پروژه محور یاد بگیرید
+            </p>
+            <button
+              class="text-white block mx-auto rounded-lg bg-[#5620BC] px-4 py-2 mt-6 md:block md:mx-auto"
+              tabindex="-1"
+            >
+              مشاهده دوره ها
+            </button>
+          </article>
+        </figure>
+      </section>
+      <section class="text-center my-7 md:my-12 lg:my-16">
+        <span class="text-xs text-gray-600 md:text-base lg:text-lg"
+          >اگه هنوز برات سواله که چه دوره ای برات مفیده حتما مقاله</span
+        >
+        <a
+          href=""
+          class="text-xs text-violet-600 md:text-base lg:text-lg"
+          tabindex="-1"
+          ّ
+          >نقشه راه فرانت اند</a
+        >
+        <span class="text-xs md:text-base lg:text-lg text-gray-600"
+          >رو بخون</span
+        >
+      </section>
+      <section
+        class="grid grid-cols-2 gap-6 mx-5 md:grid md:grid-cols-3 md:mx-16 lg:mx-16 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-5"
+      >
+        <article class="bg-white rounded-md shadow-sm text-center p-4">
+          <figure class="flex flex-col items-center mt-0.5">
+            <img
+              src="../assets/images/practical.svg"
+              alt="practical"
+              class="w-9 ml-2"
+            />
+            <figcaption class="text-[13px] mt-3">
+              کاربردی و پروژه محور
+            </figcaption>
+            <p class="font-extralight text-[11.5px] mt-3 text-gray-700">
+              با کار روی پروژه واقعی، بازار رو از نزدیک لمس کن
+            </p>
+          </figure>
+        </article>
+        <article class="bg-white rounded-md shadow-sm text-center p-4">
+          <figure class="flex flex-col items-center">
+            <img
+              src="../assets/images/time.svg"
+              alt="practical"
+              class="w-9 ml-2"
+            />
+            <figcaption class="text-[13px] mt-3">
+              ویدئو‌های کوتاه و با کیفیت
+            </figcaption>
+            <p class="font-extralight text-[11.5px] mt-3 text-gray-700">
+              هر مبحث در قالب یه جلسه کوتاه به صورت کاربردی بیان و آماده شده
+            </p>
+          </figure>
+        </article>
+        <article class="bg-white rounded-md shadow-sm text-center p-4">
+          <figure class="flex flex-col items-center mt-0.5">
+            <img
+              src="../assets/images/mentor.svg"
+              alt="practical"
+              class="w-9 ml-2"
+            />
+            <figcaption class="text-[13px] mt-3">همراه مربی</figcaption>
+            <p class="font-extralight text-[11.5px] mt-3 text-gray-700">
+              با مربی‌های حرفه‌ای و با حوصله رفع اشکال می‌کنی
+            </p>
+          </figure>
+        </article>
+        <article class="bg-white rounded-md shadow-sm text-center p-4">
+          <figure class="flex flex-col items-center">
+            <img
+              src="../assets/images/quality.svg"
+              alt="practical"
+              class="w-9 ml-2"
+            />
+            <figcaption class="text-[13px] mt-3">تضمین کیفیت</figcaption>
+            <p class="font-extralight text-[11.5px] mt-3 text-gray-700">
+              بهترین پشتیبانی و به روز ترین سطح آموزش موجود در ایران رو دریافت
+              می‌کنی
+            </p>
+          </figure>
+        </article>
+        <article class="bg-white rounded-md shadow-sm text-center p-4">
+          <figure class="flex flex-col items-center">
+            <img
+              src="../assets/images/refund.svg"
+              alt="practical"
+              class="w-9 ml-2"
+            />
+            <figcaption class="text-[13px] mt-3">تضمین بازگشت وجه</figcaption>
+            <p class="font-extralight text-[11.5px] mt-3 text-gray-700">
+              اگه راضی نبودی 15 روز فرصت داری اطلاع بدی و وجه بهت برگردونده بشه
+            </p>
+          </figure>
+        </article>
+      </section>
+      <h2
+        class="mt-10 mb-4 mr-5 text-xl text-center font-bold text-gray-800 md:mt-32"
+      >
+        دوره های برنامه نویسی آکادمی مستر فرانت
+      </h2>
+      <section
+        class="grid grid-cols-1 gap-y-10 mx-5 md:grid md:grid-cols-2 md:gap-x-5 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:mx-16"
+      >
+        <article class="bg-white rounded-md shadow-sm text-center shadow-lg">
+          <figure class="">
+            <img
+              src="../assets/images/React.svg"
+              alt="React"
+              class="object-cover w-full mb-4 rounded-t-md h-64"
+            />
+            <figcaption class="text-[13px] mt-3 pb-5 mr-5">
+              <a
+                href=""
+                class="text-lg font-semibold block text-right text-gray-700"
+                tabindex="-1"
+                >دوره حرفه ای متخصص ری اکت و ریداکس</a
+              >
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 40 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between ml-5">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <p class="text-lg font-semibold mt-5 text-gray-700">
+                  2,300,000 تومان
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <article
+          class="bg-white rounded-md shadow-sm text-center shadow-lg pb-5"
+        >
+          <figure class="">
+            <img
+              src="../assets/images/javascript.svg"
+              alt="javascript"
+              class="object-cover object-center w-full md:80 mb-4 sm:mb-8 rounded-t-lg max-w-full h-64"
+            />
+            <figcaption class="text-[13px] mt-3 mr-5">
+              <a
+                href=""
+                tabindex="-1"
+                class="text-lg font-semibold block text-right text-gray-700"
+                >دوره جامع و پیشرفته جاوااسکریپت
+              </a>
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 27 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <p class="text-lg font-semibold mt-5 ml-5 text-gray-700">
+                  1,540,000 تومان
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <article
+          class="bg-white rounded-md shadow-sm text-center shadow-lg pb-5"
+        >
+          <figure class="">
+            <img
+              src="../assets/images/tailwindCSS.svg"
+              alt="tailwindCSS"
+              class="object-cover object-center w-full md:80 mb-4 sm:mb-8 rounded-t-lg max-w-full h-64"
+            />
+            <figcaption class="text-[13px] mt-3 mr-5">
+              <a
+                href=""
+                tabindex="-1"
+                class="text-lg font-semibold block text-right text-gray-700"
+                >دوره جامع و پیشرفته TailwindCss</a
+              >
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 12 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <p class="text-lg font-semibold mt-5 ml-5 text-gray-700">
+                  498,000 تومان
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <article
+          class="bg-white rounded-md shadow-sm text-center shadow-lg pb-5"
+        >
+          <figure class="">
+            <img
+              src="../assets/images/html-css.svg"
+              alt="html-css"
+              class="object-cover object-center w-full md:80 mb-4 sm:mb-8 rounded-t-lg max-w-full h-64"
+            />
+            <figcaption class="text-[13px] mt-3 mr-5">
+              <a
+                href=""
+                tabindex="-1"
+                class="text-lg font-semibold block text-right text-gray-700"
+                >دوره طراحی وب ریسپانسیو</a
+              >
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 14 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <p class="text-lg font-semibold mt-5 ml-5 text-gray-700">
+                  398,000 تومان
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <article
+          class="bg-white rounded-md shadow-sm text-center shadow-lg pb-5"
+        >
+          <figure class="">
+            <img
+              src="../assets/images/freelancering.svg"
+              alt="freelancering"
+              class="object-cover object-center w-full md:80 mb-4 sm:mb-8 rounded-t-lg max-w-full h-64"
+            />
+            <figcaption class="text-[13px] mt-3 mr-5">
+              <a
+                href=""
+                tabindex="-1"
+                class="text-lg font-semibold block text-right text-gray-700"
+                >دوره در مسیر فریلنسری</a
+              >
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 6 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <p class="text-lg font-semibold mt-5 ml-5 text-gray-700">
+                  329,000 تومان
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <article
+          class="bg-white rounded-md shadow-sm text-center shadow-lg pb-5"
+        >
+          <figure class="">
+            <img
+              src="../assets/images/git.svg"
+              alt="git"
+              class="object-cover object-center w-full md:80 mb-4 sm:mb-8 rounded-t-lg max-w-full h-64"
+            />
+            <figcaption class="text-[13px] mt-3 mr-5">
+              <a
+                href=""
+                tabindex="-1"
+                class="text-lg font-semibold block text-right text-gray-700"
+                >دوره گیت و گیت هاب</a
+              >
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 3 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <p class="text-lg font-semibold mt-5 ml-5 text-gray-700">
+                  259,000 تومان
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <article
+          class="bg-white rounded-md shadow-sm text-center shadow-lg pb-5"
+        >
+          <figure class="">
+            <img
+              src="../assets/images/flex-grid.svg"
+              alt="flex-grid"
+              class="object-cover object-center w-full md:80 mb-4 sm:mb-8 rounded-t-lg max-w-full h-64"
+            />
+            <figcaption class="text-[13px] mt-3 mr-5">
+              <a
+                href=""
+                tabindex="-1"
+                class="text-lg font-semibold block text-right text-gray-700"
+                >دوره پروژه محور فلکس و گرید</a
+              >
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 2.5 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <div class="ml-5 mt-2">
+                  <span
+                    class="text-underline text- font-semibold mt-5 text-gray-500 line-through mr-1"
+                    >190,000</span
+                  ><span
+                    class="bg-rose-500 text-white p-1 rounded-full text-[15px]"
+                    >100%</span
+                  >
+                  <p class="text-[15px] font-semibold mt-2 text-gray-700">
+                    0 تومان
+                  </p>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <article
+          class="bg-white rounded-md shadow-sm text-center shadow-lg pb-5"
+        >
+          <figure class="">
+            <img
+              src="../assets/images/vs-code.svg"
+              alt="vs-code"
+              class="object-cover object-center w-full md:80 mb-4 sm:mb-8 rounded-t-lg max-w-full h-64"
+            />
+            <figcaption class="text-[13px] mt-3 mr-5">
+              <a
+                href="work-with-vscode.html"
+                tabindex="-1"
+                class="text-lg font-semibold block text-right text-gray-700"
+                >دوره حرفه ای کار با Vs Code</a
+              >
+              <div class="flex items-center mt-5 text-[15px] font-semibold">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class="text-primary ml-2 text-violet-700"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                  ></path>
+                  <path
+                    d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                  ></path>
+                  <path
+                    d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                  ></path>
+                </svg>
+                <p class="text-gray-500">مدت : 1.5 ساعت</p>
+              </div>
+              <a
+                href=""
+                tabindex="-1"
+                class="text-violet-700 flex items-center mt-2 text-[16px] mr-0.5"
+              >
+                <p>مشاهده دوره</p>
+                <p class="mt-1 mr-1">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </p>
+              </a>
+              <div class="flex items-center justify-between">
+                <button
+                  tabindex="-1"
+                  class="text-white text-[15px] rounded-lg bg-[#5620BC] px-4 py-2 mt-6"
+                >
+                  ثبت نام دوره
+                </button>
+                <div class="ml-5">
+                  <span
+                    class="text-underline text- font-semibold mb-5 text-gray-500 line-through mr-1"
+                    >59,000</span
+                  ><span
+                    class="bg-rose-500 text-white p-1 rounded-full text-[15px]"
+                    >100%</span
+                  >
+                  <p class="text-[15px] font-semibold mt-5 text-gray-700">
+                    0 تومان
+                  </p>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      <article class="grid grid-cols-1 mt-20 mb-6 md:grid md:grid-cols-2 md:place-items-center md:mx-16">
+        <figure class="mx-5">
+          <img src="../assets/images/article.svg" alt="">
+        </figure>
+        <div class="sm:mx-0 mx-5 mt-12">
+        <h3 class="font-bold text-xl">front-end چیه؟</h3>
+        <p class="text-sm sm:text-sm sm:my-8 leading-7 sm:leading-8 text-gray-700">
+          بذار خیلی خودمونی و به دور از تعاریف کلیشه ای بهت بگم که فرانت اند (front-end) چیه ؟ کیه و چیکار میکنه ؟ هر وبسایت و یا اپلیکیشنی دو بخش اساسی داره. یکی سمت سرور که کاربر نمیبینه و یکی سمت کاربر که میشه همون ظاهر سایت. دقیقا درست حدس زدی به چیزایی که ما مستقیما باهاش کار میکنیم و میبینم میگن فرانت سایت. مثل هدر، فوتر، بخش اصلی محتوای سایت، فرم های ثبت نام و.. که پیاده کردن همه اینا به عهده توسعه دهنده فرانت (front-end developer) هست. با اومدن فریمورک های جذاب جاوااسکریپت مثل vue.js و کتابخونه ریکت (react.js) وظیفه فرانت خیلی سنگین تر شده و خیلی از کارا که قبلا توسط توسعه دهنده بک اند (back-end developer) انجام میشد، الان دیگه فرانت اند کارا انجام میدن و همین دلیل باعث شده بازار استخدامی فرانت اند خیلی داغ بشه و حقوق فرانت اند هم خیلی بیشتر شده و همه دنبال افراد متخصص توی این حوزه هستند. بهت تبریک میگم به دنیای پر رمز و راز و جذاب برنامه نویسی وب و مخصوصا فرانت، خوش اومدی. از تجربه ما استفاده کن و تا لحظه ورود به بازار کار با نهایت افتخار کنارتیم
+        </p>
+        </div>
+      </article>
+    </main>
+    <footer class="mt-14 mx-5 md:mx-16 lg:mr-16 lg:ml-72">
+      <p class="text-violet-700 mb-5 text-sm font-semibold">
+        آکادمی آنلاین مستر فرانت، دوره های مربی محور برنامه نویسی وب
+      </p>
+      <p class="text-[14px] line-5 text-gray-600 leading-6">
+        <strong class="">پوریا نوروزی هستم ، برنامه نویس وب.</strong>
+        از سال 98 به برنامه نویسی مشغول هستم و بیش از یک سال هست که به صورت
+        تخصصی به عنوان توسعه دهنده فرانت مشغول هستم. در این چند سال چالش های
+        زیادی را در زمینه برنامه نویسی تجربه کرده ام. هزینه مالی و زمانی بسیار
+        زیادی را بابت کسب آموزش در معتبر ترین دوره های سایت های خارجی صرف کردم.
+        همه ی آموزش های مستر فرانت بر پایه سه اصل، دوره های با کیفیت و پروژه
+        محور و به روز، پشتیبانی مادام العمر به همراه آپدیت های رایگان و عودت
+        هزینه در صورت هر گونه نارضایتی استوار است. امیدوارم مستر فرانت همراه
+        خوبی برای ورود شما به بازار کار و دنیای برنامه نویسی باشد. شما می توانید
+        از طریق
+        <a href="https://instagram.com" tabindex="-1">اینستاگرام،</a>
+        <a href="https://telegram.org" tabindex="-1">تلگرام،</a>
+        <a href="https://linkdin.com" tabindex="-1">یا لینکدین</a>
+        با من در ارتباط باشید
+      </p>
+      <section class="grid grid-cols-6 gap-x-10 mt-5 text-[33px] text-gray-500">
+        <a href="https://instagram.com" tabindex="-1">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://linkdin.com" tabindex="-1">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/pooryanorouzi" tabindex="-1">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://twitter.com/pooryanorouzi" tabindex="-1">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://telegram.org" tabindex="-1">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://youtube.com" tabindex="-1">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </section>
+      <figure class="mt-5 mb-7">
+        <img src="../assets/images/zarinpal.svg" alt="" />
+        <figcaption class="mt-3 text-sm text-gray-600">
+          تمامی حقوق برای مستر فرانت محفوظ است
+        </figcaption>
+      </figure>
+    </footer>
+  </body>
+</html>
